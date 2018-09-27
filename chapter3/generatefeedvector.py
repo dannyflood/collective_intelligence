@@ -28,3 +28,15 @@ def getwords(html):
   
   # Convert to lowercase
   return [word.lower() for word in words if word!='']
+
+apcount={}
+wordcounts={}
+feedlist=[]
+for feedurl in file('feedlist.txt')
+  feedlist.add(feedurl)
+  title,wc=getwordcounts(feedurl)
+  wordcounts[title]=wc
+  for word,count in wc.items():
+    apcount.setdefault(word,0)
+    if count>1:
+      apcount[word]+=1
