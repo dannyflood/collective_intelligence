@@ -32,8 +32,8 @@ def getwords(html):
 apcount={}
 wordcounts={}
 feedlist=[]
-for feedurl in file('feedlist.txt')
-  feedlist.add(feedurl)
+for feedurl in file('feedlist.txt'):
+  feedlist.append(feedurl)
   title,wc=getwordcounts(feedurl)
   wordcounts[title]=wc
   for word,count in wc.items():
